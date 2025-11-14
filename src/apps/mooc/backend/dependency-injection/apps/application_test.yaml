@@ -1,0 +1,26 @@
+services:
+  # Repository implementations for testing (In-Memory)
+  Contexts.Users.domain.UserRepository:
+    class: ../../../../../Contexts/Users/infrastructure/InMemoryUserRepository
+
+  Contexts.Learning.domain.LearningPlanRepository:
+    class: ../../../../../Contexts/Learning/infrastructure/InMemoryLearningPlanRepository
+
+  Contexts.Tasks.domain.TaskRepository:
+    class: ../../../../../Contexts/Tasks/infrastructure/InMemoryTaskRepository
+
+  Contexts.Progress.domain.ProgressRepository:
+    class: ../../../../../Contexts/Progress/infrastructure/InMemoryProgressRepository
+
+  Contexts.Pronunciation.domain.PronunciationRepository:
+    class: ../../../../../Contexts/Pronunciation/infrastructure/InMemoryPronunciationRepository
+
+  Contexts.Feedback.domain.FeedbackRepository:
+    class: ../../../../../Contexts/Feedback/infrastructure/InMemoryFeedbackRepository
+
+  Contexts.Statistics.domain.StatisticsRepository:
+    class: ../../../../../Contexts/Statistics/infrastructure/InMemoryStatisticsRepository
+
+  Contexts.Reports.domain.ReportRepository:
+    class: ../../../../../Contexts/Reports/infrastructure/InMemoryReportRepository
+

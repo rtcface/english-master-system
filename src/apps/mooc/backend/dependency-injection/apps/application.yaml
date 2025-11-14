@@ -7,3 +7,115 @@ services:
   Apps.mooc.controllers.CoursePutController:
     class: ../../controllers/CoursePutController
     arguments: [""]
+
+  # Users Context
+  Contexts.Users.application.UserCreator:
+    class: ../../../../Contexts/Users/application/UserCreator
+    arguments: ["@Contexts.Users.domain.UserRepository"]
+
+  Contexts.Users.application.UserRoleAssigner:
+    class: ../../../../Contexts/Users/application/UserRoleAssigner
+    arguments: ["@Contexts.Users.domain.UserRepository"]
+
+  Contexts.Users.application.UserFinder:
+    class: ../../../../Contexts/Users/application/UserFinder
+    arguments: ["@Contexts.Users.domain.UserRepository"]
+
+  Apps.mooc.controllers.UserPostController:
+    class: ../../controllers/UserPostController
+    arguments: ["@Contexts.Users.application.UserCreator"]
+
+  Apps.mooc.controllers.UserRolePutController:
+    class: ../../controllers/UserRolePutController
+    arguments: ["@Contexts.Users.application.UserRoleAssigner"]
+
+  # Learning Context
+  Contexts.Learning.application.LearningPlanCreator:
+    class: ../../../../Contexts/Learning/application/LearningPlanCreator
+    arguments: ["@Contexts.Learning.domain.LearningPlanRepository"]
+
+  Contexts.Learning.application.LearningPlanFinder:
+    class: ../../../../Contexts/Learning/application/LearningPlanFinder
+    arguments: ["@Contexts.Learning.domain.LearningPlanRepository"]
+
+  Apps.mooc.controllers.LearningPlanPostController:
+    class: ../../controllers/LearningPlanPostController
+    arguments: ["@Contexts.Learning.application.LearningPlanCreator"]
+
+  # Tasks Context
+  Contexts.Tasks.application.TaskSuggester:
+    class: ../../../../Contexts/Tasks/application/TaskSuggester
+    arguments: ["@Contexts.Tasks.domain.TaskRepository"]
+
+  Contexts.Tasks.application.TaskCompleter:
+    class: ../../../../Contexts/Tasks/application/TaskCompleter
+    arguments: ["@Contexts.Tasks.domain.TaskRepository"]
+
+  Apps.mooc.controllers.TaskSuggestionGetController:
+    class: ../../controllers/TaskSuggestionGetController
+    arguments: ["@Contexts.Tasks.application.TaskSuggester"]
+
+  # Progress Context
+  Contexts.Progress.application.WeeklyProgressCalculator:
+    class: ../../../../Contexts/Progress/application/WeeklyProgressCalculator
+    arguments: ["@Contexts.Progress.domain.ProgressRepository"]
+
+  Contexts.Progress.application.ProgressMetricsFinder:
+    class: ../../../../Contexts/Progress/application/ProgressMetricsFinder
+    arguments: ["@Contexts.Progress.domain.ProgressRepository"]
+
+  Apps.mooc.controllers.ProgressMetricsGetController:
+    class: ../../controllers/ProgressMetricsGetController
+    arguments: ["@Contexts.Progress.application.ProgressMetricsFinder"]
+
+  # Pronunciation Context
+  Contexts.Pronunciation.application.PronunciationAnalyzer:
+    class: ../../../../Contexts/Pronunciation/application/PronunciationAnalyzer
+    arguments: ["@Contexts.Pronunciation.domain.PronunciationRepository"]
+
+  Contexts.Pronunciation.application.PronunciationReportGenerator:
+    class: ../../../../Contexts/Pronunciation/application/PronunciationReportGenerator
+    arguments: ["@Contexts.Pronunciation.domain.PronunciationRepository"]
+
+  Apps.mooc.controllers.PronunciationAnalysisPostController:
+    class: ../../controllers/PronunciationAnalysisPostController
+    arguments: ["@Contexts.Pronunciation.application.PronunciationAnalyzer"]
+
+  # Feedback Context
+  Contexts.Feedback.application.PersonalizedFeedbackGenerator:
+    class: ../../../../Contexts/Feedback/application/PersonalizedFeedbackGenerator
+    arguments: ["@Contexts.Feedback.domain.FeedbackRepository"]
+
+  Contexts.Feedback.application.FeedbackFinder:
+    class: ../../../../Contexts/Feedback/application/FeedbackFinder
+    arguments: ["@Contexts.Feedback.domain.FeedbackRepository"]
+
+  Apps.mooc.controllers.FeedbackGetController:
+    class: ../../controllers/FeedbackGetController
+    arguments: ["@Contexts.Feedback.application.FeedbackFinder"]
+
+  # Statistics Context
+  Contexts.Statistics.application.GlobalStatisticsCalculator:
+    class: ../../../../Contexts/Statistics/application/GlobalStatisticsCalculator
+    arguments: ["@Contexts.Statistics.domain.StatisticsRepository"]
+
+  Contexts.Statistics.application.StatisticsFinder:
+    class: ../../../../Contexts/Statistics/application/StatisticsFinder
+    arguments: ["@Contexts.Statistics.domain.StatisticsRepository"]
+
+  Apps.mooc.controllers.StatisticsGetController:
+    class: ../../controllers/StatisticsGetController
+    arguments: ["@Contexts.Statistics.application.StatisticsFinder"]
+
+  # Reports Context
+  Contexts.Reports.application.ReportGenerator:
+    class: ../../../../Contexts/Reports/application/ReportGenerator
+    arguments: ["@Contexts.Reports.domain.ReportRepository"]
+
+  Contexts.Reports.application.ReportExporter:
+    class: ../../../../Contexts/Reports/application/ReportExporter
+    arguments: ["@Contexts.Reports.domain.ReportRepository"]
+
+  Apps.mooc.controllers.ReportPostController:
+    class: ../../controllers/ReportPostController
+    arguments: ["@Contexts.Reports.application.ReportGenerator"]
