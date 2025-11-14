@@ -1,7 +1,7 @@
-import { LearningPlanFinder } from '../../../../../src/Contexts/Learning/application/LearningPlanFinder';
-import { LearningPlan } from '../../../../../src/Contexts/Learning/domain/LearningPlan';
-import { StudyGoal } from '../../../../../src/Contexts/Learning/domain/StudyGoal';
-import { UserLevel } from '../../../../../src/Contexts/Learning/domain/UserLevel';
+import { LearningPlanFinder } from '../../../../src/Contexts/Learning/application/LearningPlanFinder';
+import { LearningPlan } from '../../../../src/Contexts/Learning/domain/LearningPlan';
+import { StudyGoal } from '../../../../src/Contexts/Learning/domain/StudyGoal';
+import { UserLevel } from '../../../../src/Contexts/Learning/domain/UserLevel';
 import { LearningPlanRepositoryMock } from '../__mocks__/LearningPlanRepositoryMock';
 
 let repository: LearningPlanRepositoryMock;

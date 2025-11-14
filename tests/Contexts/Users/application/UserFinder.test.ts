@@ -1,6 +1,6 @@
-import { UserFinder } from '../../../../../src/Contexts/Users/application/UserFinder';
-import { User } from '../../../../../src/Contexts/Users/domain/User';
-import { UserRole } from '../../../../../src/Contexts/Users/domain/UserRole';
+import { UserFinder } from '../../../../src/Contexts/Users/application/UserFinder';
+import { User } from '../../../../src/Contexts/Users/domain/User';
+import { UserRole } from '../../../../src/Contexts/Users/domain/UserRole';
 import { UserRepositoryMock } from '../__mocks__/UserRepositoryMock';
 
 let repository: UserRepositoryMock;

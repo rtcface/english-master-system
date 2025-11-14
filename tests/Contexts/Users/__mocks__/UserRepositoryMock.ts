@@ -1,5 +1,5 @@
-import { User } from '../../../../../src/Contexts/Users/domain/User';
-import { UserRepository } from '../../../../../src/Contexts/Users/domain/UserRepository';
+import { User } from '../../../../src/Contexts/Users/domain/User';
+import { UserRepository } from '../../../../src/Contexts/Users/domain/UserRepository';
 
 export class UserRepositoryMock implements UserRepository {
 	private readonly mockSave = jest.fn();
@@ -19,11 +19,11 @@ export class UserRepositoryMock implements UserRepository {
 	}
 
 	assertFindWasCalledWith(id: string): void {
-		expect(this.mockFind).toHaveBeenCalledWith(id);
+		expect(this.find).toHaveBeenCalledWith(id);
 	}
 
 	assertFindAllWasCalled(): void {
-		expect(this.mockFindAll).toHaveBeenCalled();
+		expect(this.findAll).toHaveBeenCalled();
 	}
 }
 

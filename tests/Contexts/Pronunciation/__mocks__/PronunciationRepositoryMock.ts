@@ -1,5 +1,5 @@
-import { PronunciationAnalysis } from '../../../../../src/Contexts/Pronunciation/domain/PronunciationAnalysis';
-import { PronunciationRepository } from '../../../../../src/Contexts/Pronunciation/domain/PronunciationRepository';
+import { PronunciationAnalysis } from '../../../../src/Contexts/Pronunciation/domain/PronunciationAnalysis';
+import { PronunciationRepository } from '../../../../src/Contexts/Pronunciation/domain/PronunciationRepository';
 
 export class PronunciationRepositoryMock implements PronunciationRepository {
 	private readonly mockSave = jest.fn();

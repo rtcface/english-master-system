@@ -1,5 +1,5 @@
-import { Report } from '../../../../../src/Contexts/Reports/domain/Report';
-import { ReportRepository } from '../../../../../src/Contexts/Reports/domain/ReportRepository';
+import { Report } from '../../../../src/Contexts/Reports/domain/Report';
+import { ReportRepository } from '../../../../src/Contexts/Reports/domain/ReportRepository';
 
 export class ReportRepositoryMock implements ReportRepository {
 	private readonly mockSave = jest.fn();

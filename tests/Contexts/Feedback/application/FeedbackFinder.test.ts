@@ -1,6 +1,6 @@
-import { FeedbackFinder } from '../../../../../src/Contexts/Feedback/application/FeedbackFinder';
-import { Feedback } from '../../../../../src/Contexts/Feedback/domain/Feedback';
-import { FeedbackType } from '../../../../../src/Contexts/Feedback/domain/FeedbackType';
+import { FeedbackFinder } from '../../../../src/Contexts/Feedback/application/FeedbackFinder';
+import { Feedback } from '../../../../src/Contexts/Feedback/domain/Feedback';
+import { FeedbackType } from '../../../../src/Contexts/Feedback/domain/FeedbackType';
 import { FeedbackRepositoryMock } from '../__mocks__/FeedbackRepositoryMock';
 
 let repository: FeedbackRepositoryMock;

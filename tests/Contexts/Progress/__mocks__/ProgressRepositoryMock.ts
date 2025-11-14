@@ -1,5 +1,5 @@
-import { ProgressMetrics } from '../../../../../src/Contexts/Progress/domain/ProgressMetrics';
-import { ProgressRepository } from '../../../../../src/Contexts/Progress/domain/ProgressRepository';
+import { ProgressMetrics } from '../../../../src/Contexts/Progress/domain/ProgressMetrics';
+import { ProgressRepository } from '../../../../src/Contexts/Progress/domain/ProgressRepository';
 
 export class ProgressRepositoryMock implements ProgressRepository {
 	private readonly mockSave = jest.fn();

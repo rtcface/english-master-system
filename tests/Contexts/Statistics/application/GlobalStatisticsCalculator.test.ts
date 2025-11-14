@@ -1,5 +1,5 @@
-import { GlobalStatisticsCalculator } from '../../../../../src/Contexts/Statistics/application/GlobalStatisticsCalculator';
-import { GlobalStatistics } from '../../../../../src/Contexts/Statistics/domain/GlobalStatistics';
+import { GlobalStatisticsCalculator } from '../../../../src/Contexts/Statistics/application/GlobalStatisticsCalculator';
+import { GlobalStatistics } from '../../../../src/Contexts/Statistics/domain/GlobalStatistics';
 import { StatisticsRepositoryMock } from '../__mocks__/StatisticsRepositoryMock';
 
 let repository: StatisticsRepositoryMock;

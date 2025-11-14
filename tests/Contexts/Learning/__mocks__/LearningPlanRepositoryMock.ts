@@ -1,5 +1,5 @@
-import { LearningPlan } from '../../../../../src/Contexts/Learning/domain/LearningPlan';
-import { LearningPlanRepository } from '../../../../../src/Contexts/Learning/domain/LearningPlanRepository';
+import { LearningPlan } from '../../../../src/Contexts/Learning/domain/LearningPlan';
+import { LearningPlanRepository } from '../../../../src/Contexts/Learning/domain/LearningPlanRepository';
 
 export class LearningPlanRepositoryMock implements LearningPlanRepository {
 	private readonly mockSave = jest.fn();

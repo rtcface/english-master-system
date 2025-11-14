@@ -1,5 +1,5 @@
-import { GlobalStatistics } from '../../../../../src/Contexts/Statistics/domain/GlobalStatistics';
-import { StatisticsRepository } from '../../../../../src/Contexts/Statistics/domain/StatisticsRepository';
+import { GlobalStatistics } from '../../../../src/Contexts/Statistics/domain/GlobalStatistics';
+import { StatisticsRepository } from '../../../../src/Contexts/Statistics/domain/StatisticsRepository';
 
 export class StatisticsRepositoryMock implements StatisticsRepository {
 	private readonly mockSave = jest.fn();

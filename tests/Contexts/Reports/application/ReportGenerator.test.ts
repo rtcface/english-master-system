@@ -1,6 +1,6 @@
-import { ReportGenerator } from '../../../../../src/Contexts/Reports/application/ReportGenerator';
-import { Report } from '../../../../../src/Contexts/Reports/domain/Report';
-import { ReportFormat } from '../../../../../src/Contexts/Reports/domain/ReportFormat';
+import { ReportGenerator } from '../../../../src/Contexts/Reports/application/ReportGenerator';
+import { Report } from '../../../../src/Contexts/Reports/domain/Report';
+import { ReportFormat } from '../../../../src/Contexts/Reports/domain/ReportFormat';
 import { ReportRepositoryMock } from '../__mocks__/ReportRepositoryMock';
 
 let repository: ReportRepositoryMock;

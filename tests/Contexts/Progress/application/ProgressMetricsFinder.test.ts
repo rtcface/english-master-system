@@ -1,5 +1,5 @@
-import { ProgressMetricsFinder } from '../../../../../src/Contexts/Progress/application/ProgressMetricsFinder';
-import { ProgressMetrics } from '../../../../../src/Contexts/Progress/domain/ProgressMetrics';
+import { ProgressMetricsFinder } from '../../../../src/Contexts/Progress/application/ProgressMetricsFinder';
+import { ProgressMetrics } from '../../../../src/Contexts/Progress/domain/ProgressMetrics';
 import { ProgressRepositoryMock } from '../__mocks__/ProgressRepositoryMock';
 
 let repository: ProgressRepositoryMock;

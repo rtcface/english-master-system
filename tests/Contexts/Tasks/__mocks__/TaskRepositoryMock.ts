@@ -1,5 +1,5 @@
-import { Task } from '../../../../../src/Contexts/Tasks/domain/Task';
-import { TaskRepository } from '../../../../../src/Contexts/Tasks/domain/TaskRepository';
+import { Task } from '../../../../src/Contexts/Tasks/domain/Task';
+import { TaskRepository } from '../../../../src/Contexts/Tasks/domain/TaskRepository';
 
 export class TaskRepositoryMock implements TaskRepository {
 	private readonly mockSave = jest.fn();

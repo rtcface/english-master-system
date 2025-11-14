@@ -1,5 +1,5 @@
-import { Feedback } from '../../../../../src/Contexts/Feedback/domain/Feedback';
-import { FeedbackRepository } from '../../../../../src/Contexts/Feedback/domain/FeedbackRepository';
+import { Feedback } from '../../../../src/Contexts/Feedback/domain/Feedback';
+import { FeedbackRepository } from '../../../../src/Contexts/Feedback/domain/FeedbackRepository';
 
 export class FeedbackRepositoryMock implements FeedbackRepository {
 	private readonly mockSave = jest.fn();

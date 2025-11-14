@@ -1,6 +1,6 @@
-import { TaskCompleter } from '../../../../../src/Contexts/Tasks/application/TaskCompleter';
-import { Task } from '../../../../../src/Contexts/Tasks/domain/Task';
-import { TaskType } from '../../../../../src/Contexts/Tasks/domain/TaskType';
+import { TaskCompleter } from '../../../../src/Contexts/Tasks/application/TaskCompleter';
+import { Task } from '../../../../src/Contexts/Tasks/domain/Task';
+import { TaskType } from '../../../../src/Contexts/Tasks/domain/TaskType';
 import { TaskRepositoryMock } from '../__mocks__/TaskRepositoryMock';
 
 let repository: TaskRepositoryMock;

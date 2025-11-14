@@ -1,6 +1,5 @@
-import { WeeklyProgressCalculator } from '../../../../../src/Contexts/Progress/application/WeeklyProgressCalculator';
-import { ProgressMetrics } from '../../../../../src/Contexts/Progress/domain/ProgressMetrics';
-import { MetricType } from '../../../../../src/Contexts/Progress/domain/MetricType';
+import { WeeklyProgressCalculator } from '../../../../src/Contexts/Progress/application/WeeklyProgressCalculator';
+import { ProgressMetrics } from '../../../../src/Contexts/Progress/domain/ProgressMetrics';
 import { ProgressRepositoryMock } from '../__mocks__/ProgressRepositoryMock';
 
 let repository: ProgressRepositoryMock;

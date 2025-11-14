@@ -1,7 +1,7 @@
-import { PronunciationReportGenerator } from '../../../../../src/Contexts/Pronunciation/application/PronunciationReportGenerator';
-import { PronunciationAnalysis } from '../../../../../src/Contexts/Pronunciation/domain/PronunciationAnalysis';
-import { PronunciationScore } from '../../../../../src/Contexts/Pronunciation/domain/PronunciationScore';
-import { PronunciationFeedback } from '../../../../../src/Contexts/Pronunciation/domain/PronunciationFeedback';
+import { PronunciationReportGenerator } from '../../../../src/Contexts/Pronunciation/application/PronunciationReportGenerator';
+import { PronunciationAnalysis } from '../../../../src/Contexts/Pronunciation/domain/PronunciationAnalysis';
+import { PronunciationScore } from '../../../../src/Contexts/Pronunciation/domain/PronunciationScore';
+import { PronunciationFeedback } from '../../../../src/Contexts/Pronunciation/domain/PronunciationFeedback';
 import { PronunciationRepositoryMock } from '../__mocks__/PronunciationRepositoryMock';
 
 let repository: PronunciationRepositoryMock;
