@@ -25,4 +25,3 @@ export class ReportGenerator {
 		return this.repository.save(report);
 	}
 }
-

@@ -17,4 +17,3 @@ export class UserRolePutController implements Controller {
 		res.status(httpStatus.OK).send();
 	}
 }
-

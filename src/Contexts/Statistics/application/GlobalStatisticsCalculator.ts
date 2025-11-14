@@ -30,4 +30,3 @@ export class GlobalStatisticsCalculator {
 		return this.repository.save(statistics);
 	}
 }
-

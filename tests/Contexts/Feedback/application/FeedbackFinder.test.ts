@@ -40,4 +40,3 @@ describe('FeedbackFinder', () => {
 		expect(foundFeedback).toBeNull();
 	});
 });
-

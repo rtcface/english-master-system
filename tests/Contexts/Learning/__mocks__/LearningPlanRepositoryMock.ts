@@ -2,7 +2,6 @@ import { LearningPlan } from '../../../../src/Contexts/Learning/domain/LearningP
 import { LearningPlanRepository } from '../../../../src/Contexts/Learning/domain/LearningPlanRepository';
 
 export class LearningPlanRepositoryMock implements LearningPlanRepository {
-	private readonly mockSave = jest.fn();
 	public findByUserId = jest.fn();
 
 	async save(learningPlan: LearningPlan): Promise<void> {
@@ -20,5 +19,6 @@ export class LearningPlanRepositoryMock implements LearningPlanRepository {
 	assertFindByUserIdWasCalledWith(userId: string): void {
 		expect(this.findByUserId).toHaveBeenCalledWith(userId);
 	}
-}
 
+	private readonly mockSave = jest.fn();
+}

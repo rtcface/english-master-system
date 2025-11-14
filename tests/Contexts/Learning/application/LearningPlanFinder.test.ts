@@ -42,4 +42,3 @@ describe('LearningPlanFinder', () => {
 		repository.assertFindByUserIdWasCalledWith(userId);
 	});
 });
-

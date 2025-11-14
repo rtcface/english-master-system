@@ -33,4 +33,3 @@ describe('LearningPlanCreator', () => {
 		repository.assertLastSavedLearningPlanIs(learningPlan);
 	});
 });
-

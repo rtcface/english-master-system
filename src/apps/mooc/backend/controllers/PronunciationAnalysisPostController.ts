@@ -21,9 +21,14 @@ export class PronunciationAnalysisPostController implements Controller {
 		const pronunciationScore = new PronunciationScore(score);
 		const pronunciationFeedback = new PronunciationFeedback(feedback);
 
-		await this.pronunciationAnalyzer.run(id, userId, audioUrl, pronunciationScore, pronunciationFeedback);
+		await this.pronunciationAnalyzer.run(
+			id,
+			userId,
+			audioUrl,
+			pronunciationScore,
+			pronunciationFeedback
+		);
 
 		res.status(httpStatus.CREATED).send();
 	}
 }
-

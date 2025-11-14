@@ -12,4 +12,3 @@ export class LearningPlanFinder {
 		return this.repository.findByUserId(userId);
 	}
 }
-

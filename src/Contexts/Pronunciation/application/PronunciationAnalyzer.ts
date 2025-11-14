@@ -28,4 +28,3 @@ export class PronunciationAnalyzer {
 		return this.repository.save(analysis);
 	}
 }
-

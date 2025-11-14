@@ -37,4 +37,3 @@ describe('StatisticsFinder', () => {
 		expect(foundStatistics).toBeNull();
 	});
 });
-

@@ -33,4 +33,3 @@ export class ProgressMetrics {
 		this.speakingScore = speakingScore;
 	}
 }
-

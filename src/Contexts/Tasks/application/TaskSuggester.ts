@@ -27,4 +27,3 @@ export class TaskSuggester {
 		return this.repository.save(task);
 	}
 }
-

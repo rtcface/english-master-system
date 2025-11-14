@@ -32,4 +32,3 @@ describe('TaskSuggester', () => {
 		repository.assertLastSavedTaskIs(task);
 	});
 });
-

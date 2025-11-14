@@ -20,4 +20,3 @@ export class TaskSuggestionGetController implements Controller {
 		res.status(httpStatus.OK).json({ taskId, type, description, profession });
 	}
 }
-

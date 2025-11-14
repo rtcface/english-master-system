@@ -33,9 +33,6 @@ describe('ReportExporter', () => {
 
 		repository.findById = jest.fn().mockResolvedValue(null);
 
-		await expect(exporter.run(reportId)).rejects.toThrow(
-			`Report with id ${reportId} not found`
-		);
+		await expect(exporter.run(reportId)).rejects.toThrow(`Report with id ${reportId} not found`);
 	});
 });
-

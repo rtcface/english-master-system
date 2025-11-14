@@ -25,4 +25,3 @@ describe('UserCreator', () => {
 		repository.assertLastSavedUserIs(user);
 	});
 });
-

@@ -2,14 +2,12 @@ import { ProgressMetrics } from '../../../../src/Contexts/Progress/domain/Progre
 import { ProgressRepository } from '../../../../src/Contexts/Progress/domain/ProgressRepository';
 
 export class ProgressRepositoryMock implements ProgressRepository {
-	private readonly mockSave = jest.fn();
 	public findByUserIdAndWeek = jest.fn();
 	public findByUserId = jest.fn();
 
 	async save(progressMetrics: ProgressMetrics): Promise<void> {
 		await this.mockSave(progressMetrics);
 	}
-
 
 	assertLastSavedProgressMetricsIs(expected: ProgressMetrics): void {
 		const mock = this.mockSave.mock;
@@ -18,5 +16,6 @@ export class ProgressRepositoryMock implements ProgressRepository {
 		expect(lastSavedMetrics.id).toEqual(expected.id);
 		expect(lastSavedMetrics.userId).toEqual(expected.userId);
 	}
-}
 
+	private readonly mockSave = jest.fn();
+}

@@ -15,7 +15,7 @@ export class InMemoryFeedbackRepository implements FeedbackRepository {
 		if (!feedbackId) {
 			return null;
 		}
+
 		return this.feedbacks.get(feedbackId) ?? null;
 	}
 }
-

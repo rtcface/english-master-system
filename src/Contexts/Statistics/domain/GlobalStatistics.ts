@@ -37,4 +37,3 @@ export class GlobalStatistics {
 		this.calculatedAt = calculatedAt ?? new Date();
 	}
 }
-

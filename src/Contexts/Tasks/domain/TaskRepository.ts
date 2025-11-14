@@ -5,4 +5,3 @@ export interface TaskRepository {
 	findByUserId(userId: string): Promise<Task[]>;
 	findById(id: string): Promise<Task | null>;
 }
-

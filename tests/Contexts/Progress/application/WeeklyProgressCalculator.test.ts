@@ -43,4 +43,3 @@ describe('WeeklyProgressCalculator', () => {
 		repository.assertLastSavedProgressMetricsIs(progressMetrics);
 	});
 });
-

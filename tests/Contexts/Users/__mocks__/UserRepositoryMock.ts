@@ -2,7 +2,6 @@ import { User } from '../../../../src/Contexts/Users/domain/User';
 import { UserRepository } from '../../../../src/Contexts/Users/domain/UserRepository';
 
 export class UserRepositoryMock implements UserRepository {
-	private readonly mockSave = jest.fn();
 	public find = jest.fn();
 	public findAll = jest.fn();
 
@@ -25,5 +24,6 @@ export class UserRepositoryMock implements UserRepository {
 	assertFindAllWasCalled(): void {
 		expect(this.findAll).toHaveBeenCalled();
 	}
-}
 
+	private readonly mockSave = jest.fn();
+}

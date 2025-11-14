@@ -6,10 +6,13 @@ export class InMemoryReportRepository implements ReportRepository {
 
 	async save(report: Report): Promise<void> {
 		this.reports.set(report.id, report);
+
+		return Promise.resolve();
 	}
 
 	async findById(id: string): Promise<Report | null> {
-		return this.reports.get(id) ?? null;
+		const report = this.reports.get(id) ?? null;
+
+		return Promise.resolve(report);
 	}
 }
-

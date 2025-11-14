@@ -12,7 +12,10 @@ export const register = (router: Router): void => {
 		'Apps.mooc.controllers.UserRolePutController'
 	);
 
-	router.post('/users', (req: Request, res: Response) => userPostController.run(req, res));
-	router.put('/users/:id/role', (req: Request, res: Response) => userRolePutController.run(req, res));
+	router.post('/users', (req: Request, res: Response) => {
+		void userPostController.run(req, res);
+	});
+	router.put('/users/:id/role', (req: Request, res: Response) => {
+		void userRolePutController.run(req, res);
+	});
 };
-

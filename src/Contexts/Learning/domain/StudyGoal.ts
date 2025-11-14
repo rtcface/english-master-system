@@ -6,4 +6,3 @@ export enum StudyGoal {
 	C1 = 'C1',
 	C2 = 'C2'
 }
-

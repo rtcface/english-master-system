@@ -16,4 +16,3 @@ export class UserFinder {
 		return this.repository.findAll();
 	}
 }
-

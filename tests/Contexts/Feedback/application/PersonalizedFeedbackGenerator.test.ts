@@ -34,4 +34,3 @@ describe('PersonalizedFeedbackGenerator', () => {
 		repository.assertLastSavedFeedbackIs(feedback);
 	});
 });
-

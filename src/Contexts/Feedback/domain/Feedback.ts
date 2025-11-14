@@ -35,4 +35,3 @@ export class Feedback {
 		this.createdAt = createdAt ?? new Date();
 	}
 }
-

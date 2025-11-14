@@ -14,10 +14,10 @@ export class FeedbackGetController implements Controller {
 
 		if (!feedback) {
 			res.status(httpStatus.NOT_FOUND).send();
+
 			return;
 		}
 
 		res.status(httpStatus.OK).json(feedback);
 	}
 }
-

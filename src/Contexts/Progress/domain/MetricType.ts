@@ -4,4 +4,3 @@ export enum MetricType {
 	LISTENING = 'listening',
 	SPEAKING = 'speaking'
 }
-

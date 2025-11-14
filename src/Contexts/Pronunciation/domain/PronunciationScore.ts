@@ -17,4 +17,3 @@ export class PronunciationScore {
 		this.coherence = coherence;
 	}
 }
-

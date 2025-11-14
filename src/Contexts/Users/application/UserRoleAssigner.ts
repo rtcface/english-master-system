@@ -1,7 +1,7 @@
 import { User } from '../domain/User';
+import { UserPermissions } from '../domain/UserPermissions';
 import { UserRepository } from '../domain/UserRepository';
 import { UserRole } from '../domain/UserRole';
-import { UserPermissions } from '../domain/UserPermissions';
 
 export class UserRoleAssigner {
 	private readonly repository: UserRepository;
@@ -29,4 +29,3 @@ export class UserRoleAssigner {
 		return this.repository.save(updatedUser);
 	}
 }
-

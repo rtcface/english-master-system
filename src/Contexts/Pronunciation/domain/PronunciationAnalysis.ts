@@ -32,4 +32,3 @@ export class PronunciationAnalysis {
 		this.createdAt = createdAt ?? new Date();
 	}
 }
-

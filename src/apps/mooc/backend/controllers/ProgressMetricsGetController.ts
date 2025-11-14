@@ -14,6 +14,7 @@ export class ProgressMetricsGetController implements Controller {
 			const metrics = await this.progressMetricsFinder.run(userId, parseInt(week, 10));
 			if (!metrics) {
 				res.status(httpStatus.NOT_FOUND).send();
+
 				return;
 			}
 			res.status(httpStatus.OK).json(metrics);
@@ -23,4 +24,3 @@ export class ProgressMetricsGetController implements Controller {
 		}
 	}
 }
-

@@ -5,4 +5,3 @@ export interface UserRepository {
 	find(id: string): Promise<User | null>;
 	findAll(): Promise<User[]>;
 }
-

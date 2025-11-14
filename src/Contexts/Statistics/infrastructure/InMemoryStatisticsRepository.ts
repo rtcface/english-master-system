@@ -6,10 +6,11 @@ export class InMemoryStatisticsRepository implements StatisticsRepository {
 
 	async save(statistics: GlobalStatistics): Promise<void> {
 		this.latestStatistics = statistics;
+
+		return Promise.resolve();
 	}
 
 	async findLatest(): Promise<GlobalStatistics | null> {
-		return this.latestStatistics;
+		return Promise.resolve(this.latestStatistics);
 	}
 }
-

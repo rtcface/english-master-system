@@ -27,4 +27,3 @@ export class Report {
 		this.createdAt = createdAt ?? new Date();
 	}
 }
-

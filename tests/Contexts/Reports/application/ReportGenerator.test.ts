@@ -48,4 +48,3 @@ describe('ReportGenerator', () => {
 		repository.assertLastSavedReportIs(report);
 	});
 });
-

@@ -28,4 +28,3 @@ export class TaskCompleter {
 		return this.repository.save(completedTask);
 	}
 }
-

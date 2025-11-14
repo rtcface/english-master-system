@@ -8,8 +8,7 @@ export const register = (router: Router): void => {
 		'Apps.mooc.controllers.LearningPlanPostController'
 	);
 
-	router.post('/learning-plans', (req: Request, res: Response) =>
-		learningPlanPostController.run(req, res)
-	);
+	router.post('/learning-plans', (req: Request, res: Response) => {
+		void learningPlanPostController.run(req, res);
+	});
 };
-

@@ -61,4 +61,3 @@ describe('ProgressMetricsFinder', () => {
 		expect(foundMetrics).toEqual(metrics);
 	});
 });
-

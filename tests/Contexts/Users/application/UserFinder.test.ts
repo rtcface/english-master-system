@@ -64,4 +64,3 @@ describe('UserFinder', () => {
 		repository.assertFindAllWasCalled();
 	});
 });
-

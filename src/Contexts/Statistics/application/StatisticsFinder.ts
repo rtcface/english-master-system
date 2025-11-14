@@ -12,4 +12,3 @@ export class StatisticsFinder {
 		return this.repository.findLatest();
 	}
 }
-

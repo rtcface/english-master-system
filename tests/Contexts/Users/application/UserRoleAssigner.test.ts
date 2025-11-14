@@ -1,7 +1,7 @@
 import { UserRoleAssigner } from '../../../../src/Contexts/Users/application/UserRoleAssigner';
 import { User } from '../../../../src/Contexts/Users/domain/User';
-import { UserRole } from '../../../../src/Contexts/Users/domain/UserRole';
 import { UserPermissions } from '../../../../src/Contexts/Users/domain/UserPermissions';
+import { UserRole } from '../../../../src/Contexts/Users/domain/UserRole';
 import { UserRepositoryMock } from '../__mocks__/UserRepositoryMock';
 
 let repository: UserRepositoryMock;
@@ -32,4 +32,3 @@ describe('UserRoleAssigner', () => {
 		repository.assertFindWasCalledWith(userId);
 	});
 });
-

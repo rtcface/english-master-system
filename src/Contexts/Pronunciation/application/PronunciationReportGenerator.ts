@@ -18,4 +18,3 @@ export class PronunciationReportGenerator {
 		return analysis;
 	}
 }
-

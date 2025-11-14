@@ -23,4 +23,3 @@ export class LearningPlanPostController implements Controller {
 		res.status(httpStatus.CREATED).send();
 	}
 }
-

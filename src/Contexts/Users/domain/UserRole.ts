@@ -3,4 +3,3 @@ export enum UserRole {
 	TUTOR_IA = 'tutor_ia',
 	RESEARCHER = 'researcher'
 }
-

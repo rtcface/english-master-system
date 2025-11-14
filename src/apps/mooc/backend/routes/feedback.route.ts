@@ -8,6 +8,7 @@ export const register = (router: Router): void => {
 		'Apps.mooc.controllers.FeedbackGetController'
 	);
 
-	router.get('/feedback/:taskId', (req: Request, res: Response) => feedbackGetController.run(req, res));
+	router.get('/feedback/:taskId', (req: Request, res: Response) => {
+		void feedbackGetController.run(req, res);
+	});
 };
-

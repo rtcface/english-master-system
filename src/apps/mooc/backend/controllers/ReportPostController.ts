@@ -21,4 +21,3 @@ export class ReportPostController implements Controller {
 		res.status(httpStatus.CREATED).send();
 	}
 }
-

@@ -8,8 +8,7 @@ export const register = (router: Router): void => {
 		'Apps.mooc.controllers.TaskSuggestionGetController'
 	);
 
-	router.get('/tasks/suggestions', (req: Request, res: Response) =>
-		taskSuggestionGetController.run(req, res)
-	);
+	router.get('/tasks/suggestions', (req: Request, res: Response) => {
+		void taskSuggestionGetController.run(req, res);
+	});
 };
-

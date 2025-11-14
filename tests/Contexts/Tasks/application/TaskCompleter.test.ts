@@ -36,4 +36,3 @@ describe('TaskCompleter', () => {
 		repository.assertLastSavedTaskIs(completedTask);
 	});
 });
-

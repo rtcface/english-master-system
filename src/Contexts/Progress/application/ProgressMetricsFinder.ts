@@ -16,4 +16,3 @@ export class ProgressMetricsFinder {
 		return this.repository.findByUserId(userId);
 	}
 }
-

@@ -8,8 +8,7 @@ export const register = (router: Router): void => {
 		'Apps.mooc.controllers.ProgressMetricsGetController'
 	);
 
-	router.get('/progress/metrics', (req: Request, res: Response) =>
-		progressMetricsGetController.run(req, res)
-	);
+	router.get('/progress/metrics', (req: Request, res: Response) => {
+		void progressMetricsGetController.run(req, res);
+	});
 };
-

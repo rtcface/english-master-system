@@ -1,7 +1,7 @@
 import { PronunciationAnalyzer } from '../../../../src/Contexts/Pronunciation/application/PronunciationAnalyzer';
 import { PronunciationAnalysis } from '../../../../src/Contexts/Pronunciation/domain/PronunciationAnalysis';
-import { PronunciationScore } from '../../../../src/Contexts/Pronunciation/domain/PronunciationScore';
 import { PronunciationFeedback } from '../../../../src/Contexts/Pronunciation/domain/PronunciationFeedback';
+import { PronunciationScore } from '../../../../src/Contexts/Pronunciation/domain/PronunciationScore';
 import { PronunciationRepositoryMock } from '../__mocks__/PronunciationRepositoryMock';
 
 let repository: PronunciationRepositoryMock;
@@ -40,4 +40,3 @@ describe('PronunciationAnalyzer', () => {
 		repository.assertLastSavedAnalysisIs(analysis);
 	});
 });
-

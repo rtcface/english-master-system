@@ -4,4 +4,3 @@ export enum TaskType {
 	PERSONAL = 'personal',
 	GENERAL = 'general'
 }
-

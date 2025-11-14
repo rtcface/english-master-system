@@ -7,4 +7,3 @@ export class PronunciationFeedback {
 		this.suggestions = suggestions;
 	}
 }
-

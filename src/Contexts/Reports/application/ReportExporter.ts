@@ -18,4 +18,3 @@ export class ReportExporter {
 		return report;
 	}
 }
-

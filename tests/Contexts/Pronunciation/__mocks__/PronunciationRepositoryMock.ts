@@ -2,13 +2,11 @@ import { PronunciationAnalysis } from '../../../../src/Contexts/Pronunciation/do
 import { PronunciationRepository } from '../../../../src/Contexts/Pronunciation/domain/PronunciationRepository';
 
 export class PronunciationRepositoryMock implements PronunciationRepository {
-	private readonly mockSave = jest.fn();
 	public findById = jest.fn();
 
 	async save(analysis: PronunciationAnalysis): Promise<void> {
 		await this.mockSave(analysis);
 	}
-
 
 	assertLastSavedAnalysisIs(expected: PronunciationAnalysis): void {
 		const mock = this.mockSave.mock;
@@ -17,5 +15,6 @@ export class PronunciationRepositoryMock implements PronunciationRepository {
 		expect(lastSavedAnalysis.id).toEqual(expected.id);
 		expect(lastSavedAnalysis.userId).toEqual(expected.userId);
 	}
-}
 
+	private readonly mockSave = jest.fn();
+}

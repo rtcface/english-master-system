@@ -43,4 +43,3 @@ describe('GlobalStatisticsCalculator', () => {
 		repository.assertLastSavedStatisticsIs(statistics);
 	});
 });
-

@@ -8,8 +8,7 @@ export const register = (router: Router): void => {
 		'Apps.mooc.controllers.StatisticsGetController'
 	);
 
-	router.get('/statistics/global', (req: Request, res: Response) =>
-		statisticsGetController.run(req, res)
-	);
+	router.get('/statistics/global', (req: Request, res: Response) => {
+		void statisticsGetController.run(req, res);
+	});
 };
-

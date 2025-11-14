@@ -28,4 +28,3 @@ export class LearningPlanCreator {
 		return this.repository.save(learningPlan);
 	}
 }
-

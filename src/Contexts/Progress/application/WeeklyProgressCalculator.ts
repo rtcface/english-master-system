@@ -30,4 +30,3 @@ export class WeeklyProgressCalculator {
 		return this.repository.save(progressMetrics);
 	}
 }
-

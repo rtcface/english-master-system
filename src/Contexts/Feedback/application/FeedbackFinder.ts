@@ -12,4 +12,3 @@ export class FeedbackFinder {
 		return this.repository.findByTaskId(taskId);
 	}
 }
-

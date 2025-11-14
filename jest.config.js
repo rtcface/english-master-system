@@ -4,8 +4,11 @@ module.exports = {
 	cacheDirectory: '.tmp/jestCache',
 	moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
 	transform: {
-		'^.+\\.ts$': ['ts-jest', {
-			isolatedModules: true
-		}]
+		'^.+\\.ts$': [
+			'ts-jest',
+			{
+				isolatedModules: true
+			}
+		]
 	}
 };

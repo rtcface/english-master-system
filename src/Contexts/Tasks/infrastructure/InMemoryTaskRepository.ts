@@ -12,15 +12,23 @@ export class InMemoryTaskRepository implements TaskRepository {
 			userTasks.push(task.id);
 			this.userTasks.set(task.userId, userTasks);
 		}
+
+		return Promise.resolve();
 	}
 
 	async findByUserId(userId: string): Promise<Task[]> {
 		const taskIds = this.userTasks.get(userId) ?? [];
-		return taskIds.map(id => this.tasks.get(id)!).filter(Boolean);
+
+		const tasks = taskIds
+			.map(id => this.tasks.get(id))
+			.filter((task): task is Task => task !== undefined);
+
+		return Promise.resolve(tasks);
 	}
 
 	async findById(id: string): Promise<Task | null> {
-		return this.tasks.get(id) ?? null;
+		const task = this.tasks.get(id) ?? null;
+
+		return Promise.resolve(task);
 	}
 }
-

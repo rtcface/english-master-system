@@ -8,6 +8,7 @@ export const register = (router: Router): void => {
 		'Apps.mooc.controllers.ReportPostController'
 	);
 
-	router.post('/reports/generate', (req: Request, res: Response) => reportPostController.run(req, res));
+	router.post('/reports/generate', (req: Request, res: Response) => {
+		void reportPostController.run(req, res);
+	});
 };
-

@@ -28,4 +28,3 @@ export class LearningPlan {
 		this.dailyAvailability = dailyAvailability;
 	}
 }
-

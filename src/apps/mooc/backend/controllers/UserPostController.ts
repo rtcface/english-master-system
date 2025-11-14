@@ -21,4 +21,3 @@ export class UserPostController implements Controller {
 		res.status(httpStatus.CREATED).send();
 	}
 }
-

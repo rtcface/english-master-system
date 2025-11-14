@@ -35,4 +35,3 @@ export class Task {
 		this.completedAt = completedAt;
 	}
 }
-

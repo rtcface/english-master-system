@@ -6,4 +6,3 @@ export enum UserLevel {
 	C1 = 'C1',
 	C2 = 'C2'
 }
-

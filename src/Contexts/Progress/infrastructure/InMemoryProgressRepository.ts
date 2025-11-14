@@ -17,12 +17,13 @@ export class InMemoryProgressRepository implements ProgressRepository {
 
 	async findByUserIdAndWeek(userId: string, week: number): Promise<ProgressMetrics | null> {
 		const key = `${userId}-${week}`;
+
 		return this.metrics.get(key) ?? null;
 	}
 
 	async findByUserId(userId: string): Promise<ProgressMetrics[]> {
 		const metricIds = this.userMetrics.get(userId) ?? [];
+
 		return metricIds.map(id => this.metrics.get(id)!).filter(Boolean);
 	}
 }
-

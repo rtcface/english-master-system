@@ -15,7 +15,7 @@ export class InMemoryLearningPlanRepository implements LearningPlanRepository {
 		if (!planId) {
 			return null;
 		}
+
 		return this.learningPlans.get(planId) ?? null;
 	}
 }
-

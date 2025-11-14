@@ -5,4 +5,3 @@ export interface ProgressRepository {
 	findByUserIdAndWeek(userId: string, week: number): Promise<ProgressMetrics | null>;
 	findByUserId(userId: string): Promise<ProgressMetrics[]>;
 }
-

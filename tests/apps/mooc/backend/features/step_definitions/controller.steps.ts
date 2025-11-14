@@ -4,8 +4,22 @@ import request from 'supertest';
 
 import { MoocBackendApp } from '../../../../../../src/apps/mooc/backend/MoocBackendApp';
 
+interface TaskSuggestionResponseBody {
+	taskId?: string;
+	type?: string;
+	description?: string;
+}
+
+interface FeedbackRecommendationsResponseBody {
+	recommendations?: unknown;
+}
+
+interface AggregatedStatisticsResponseBody {
+	totalUsers?: unknown;
+}
+
 let _request: request.Test;
-let application: MoocBackendApp;
+let application!: MoocBackendApp;
 let _response: request.Response;
 
 Given('I send a GET request to {string}', (route: string) => {
@@ -43,9 +57,10 @@ Then('the response should be empty', () => {
 });
 
 Then('the response should contain a task suggestion', () => {
-	assert(_response.body.taskId !== undefined);
-	assert(_response.body.type !== undefined);
-	assert(_response.body.description !== undefined);
+	const body = _response.body as unknown as TaskSuggestionResponseBody;
+	assert(body.taskId !== undefined);
+	assert(body.type !== undefined);
+	assert(body.description !== undefined);
 });
 
 Then('the response should contain progress metrics', () => {
@@ -53,20 +68,28 @@ Then('the response should contain progress metrics', () => {
 });
 
 Then('the response should contain feedback recommendations', () => {
-	assert(_response.body !== null);
-	assert(_response.body.recommendations !== undefined);
+	const body = _response.body as unknown as FeedbackRecommendationsResponseBody | null;
+	assert(body !== null);
+	assert(body.recommendations !== undefined);
 });
 
 Then('the response should contain aggregated statistics', () => {
-	assert(_response.body !== null);
-	assert(_response.body.totalUsers !== undefined);
+	const body = _response.body as unknown as AggregatedStatisticsResponseBody | null;
+	assert(body !== null);
+	assert(body.totalUsers !== undefined);
 });
 
-BeforeAll(async () => {
-	application = new MoocBackendApp();
-	await application.start();
+BeforeAll(done => {
+	void (async () => {
+		application = new MoocBackendApp();
+		await application.start();
+		done();
+	})();
 });
 
-AfterAll(async () => {
-	await application.stop();
+AfterAll(done => {
+	void (async () => {
+		await application.stop();
+		done();
+	})();
 });

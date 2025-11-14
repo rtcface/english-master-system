@@ -6,4 +6,3 @@ export enum FeedbackType {
 	WRITING = 'writing',
 	GENERAL = 'general'
 }
-

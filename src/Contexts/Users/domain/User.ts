@@ -28,4 +28,3 @@ export class User {
 		this.permissions = permissions ?? UserPermissions.createForRole(role);
 	}
 }
-

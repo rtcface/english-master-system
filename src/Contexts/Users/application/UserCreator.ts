@@ -15,4 +15,3 @@ export class UserCreator {
 		return this.repository.save(user);
 	}
 }
-

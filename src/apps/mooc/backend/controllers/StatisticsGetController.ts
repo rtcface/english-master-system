@@ -12,10 +12,10 @@ export class StatisticsGetController implements Controller {
 
 		if (!statistics) {
 			res.status(httpStatus.NOT_FOUND).send();
+
 			return;
 		}
 
 		res.status(httpStatus.OK).json(statistics);
 	}
 }
-
